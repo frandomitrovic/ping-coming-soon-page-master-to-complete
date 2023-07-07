@@ -4,7 +4,7 @@ const form = document.getElementById('email-form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const emailValue = e.value.trim();
+    const emailValue = email.value.trim();
 
     checkEmail(emailValue);
 });
@@ -35,7 +35,7 @@ function setErrorFor(input, message) {
     small.innerText = message;
 }
 
-function setSuiccessFor(input) {
+function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = 'email-form success';
 }
